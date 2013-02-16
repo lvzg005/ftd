@@ -1,13 +1,4 @@
-tst
-test
- test
-  test 
-  tee
 
-  ss
-tree 
-   wee
- dd
 
  public  void main(String[] args) {
      system.out.println("if you  see this, nothing happens.");   
