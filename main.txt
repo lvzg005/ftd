@@ -8,3 +8,12 @@ test
 tree 
    wee
  dd
+
+ public  void main(String[] args) {
+     system.out.println("if you  see this, nothing happens.");   
+ }
+
+ private void methodName(String arg1) {
+     //TODO
+     
+ }
