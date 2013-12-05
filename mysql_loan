@@ -1,0 +1,337 @@
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : LOCALHOST
+Source Server Version : 50083
+Source Host           : localhost:3306
+Source Database       : bus
+
+Target Server Type    : MYSQL
+Target Server Version : 50083
+File Encoding         : 65001
+
+Date: 2013-12-05 18:31:28
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for `sample_account`
+-- ----------------------------
+DROP TABLE IF EXISTS `sample_account`;
+CREATE TABLE `sample_account` (
+  `USERID` varchar(32) NOT NULL,
+  `REALNAME` varchar(30) NOT NULL,
+  `USERNAME` varchar(30) NOT NULL,
+  `USERPASSWORD` varchar(32) NOT NULL,
+  `BIRTHDAY` date default NULL,
+  `GENDER` char(1) default NULL,
+  `CELLPHONE` varchar(11) default NULL,
+  `EMAILADDR` varchar(30) default NULL,
+  PRIMARY KEY  (`USERID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of sample_account
+-- ----------------------------
+INSERT INTO `sample_account` VALUES ('1a7727eeb3374fde9e67d72d1ff3a76b', '测试人10', 'kona10', '96e79218965eb72c92a549dd5a330112', '2012-04-22', '1', '66029285239', '53a7ctest@sina.com');
+INSERT INTO `sample_account` VALUES ('1e1040f8e94245ce9c253430ad474d86', '测试人14', 'kona14', '96e79218965eb72c92a549dd5a330112', '2012-01-05', '2', '54562696206', 'auaGBtest@sina.com');
+INSERT INTO `sample_account` VALUES ('218fd0fabf0145aba9f8c8dd118c8739', '测试人8', 'kona8', '96e79218965eb72c92a549dd5a330112', '2012-06-15', '2', '44976542034', 'Dl88Atest@sina.com');
+INSERT INTO `sample_account` VALUES ('2987efdab75c4ab3a1c4cfb5e9448bdb', '测试人7', 'kona7', '96e79218965eb72c92a549dd5a330112', '2012-07-12', '1', '83815788456', 'JmDDJtest@sina.com');
+INSERT INTO `sample_account` VALUES ('2c7be51739f04804adad12caa363da87', '测试人16', 'kona16', '96e79218965eb72c92a549dd5a330112', '2011-11-12', '0', '11111111111', 'ZZZZ@sohu.com');
+INSERT INTO `sample_account` VALUES ('538ff93c0eae48aba0bf5a40ab12fd30', '测试人24', 'kona24', '96e79218965eb72c92a549dd5a330112', '2011-04-10', '0', '64931197608', 'PaTz3test@sina.com');
+INSERT INTO `sample_account` VALUES ('660973ddd2c347afb2ee1a39148256c9', '测试人21', 'kona21', '96e79218965eb72c92a549dd5a330112', '2011-06-30', '0', '22062898212', 'btB00test@sina.com');
+INSERT INTO `sample_account` VALUES ('81cd6915dcbb4f3cb41f76e2748bc5fd', '测试人9', 'kona9', '96e79218965eb72c92a549dd5a330112', '2012-05-19', '0', '68892977564', 'VHLoBtest@sina.com');
+INSERT INTO `sample_account` VALUES ('82d616b156ac4963b940b1cdf0e0d113', '测试人25', 'kona25', '96e79218965eb72c92a549dd5a330112', '2011-03-14', '1', '01497337350', 'sQptxtest@sina.com');
+INSERT INTO `sample_account` VALUES ('848c6c1649684af292ab615917e419f5', '测试人15', 'kona15', '96e79218965eb72c92a549dd5a330112', '2011-12-09', '0', '14872261863', 'vkAIUtest@sina.com');
+INSERT INTO `sample_account` VALUES ('8faa35c624074db5a8771d17af0b7725', '测试人6', 'kona6', '96e79218965eb72c92a549dd5a330112', '2012-08-08', '0', '41503720323', 'AZHGZtest@sina.com');
+INSERT INTO `sample_account` VALUES ('99cf795897dd44369555b5221802b8b2', '测试人19', 'kona19', '96e79218965eb72c92a549dd5a330112', '2011-08-23', '1', '17645323166', 'rLCfhtest@sina.com');
+INSERT INTO `sample_account` VALUES ('ba41e396eb94427993f1b81230395cea', '测试人23', 'kona23', '96e79218965eb72c92a549dd5a330112', '2011-05-07', '2', '34647005133', 'BUhshtest@sina.com');
+INSERT INTO `sample_account` VALUES ('c326c55ded7746a09a10fa8803a1a78c', '测试人17.', 'kona17_', '96e79218965eb72c92a549dd5a330112', '2013-01-15', '0', '45484847878', 'aaaa@gmail.com');
+INSERT INTO `sample_account` VALUES ('c6477a3707fc462f8b0f5f5a7a566a43', '测试人18', 'kona18', '96e79218965eb72c92a549dd5a330112', '2011-09-19', '0', '69165530081', 'b2eIGtest@sina.com');
+INSERT INTO `sample_account` VALUES ('cece5055c11541769aff0d26e7e62de4', '测试人13', 'kona13', '96e79218965eb72c92a549dd5a330112', '2012-02-01', '1', '04899609844', 'BECv6test@sina.com');
+INSERT INTO `sample_account` VALUES ('d46ce460ae994f52b6fbd03f74823d13', '测试人11', 'kona11', '96e79218965eb72c92a549dd5a330112', '2012-03-26', '2', '76431847193', 'wvXk8test@sina.com');
+INSERT INTO `sample_account` VALUES ('e4c765b8b73242409279fa90464489b2', '测试人12', 'kona12', '96e79218965eb72c92a549dd5a330112', '2012-02-28', '0', '49292013897', '3GmRetest@sina.com');
+INSERT INTO `sample_account` VALUES ('e67e0e7d2e3247b19d5c0bfdc15347b7', '测试人5_', 'kona5', '96e79218965eb72c92a549dd5a330112', '2012-09-04', '2', '25033066906', 'fce28test@sina.com');
+INSERT INTO `sample_account` VALUES ('ed46bdb4a18e44248292e95b73c04390', '测试人22', 'kona22', '96e79218965eb72c92a549dd5a330112', '2011-06-03', '1', '79359106890', 'FBA7Ltest@sina.com');
+INSERT INTO `sample_account` VALUES ('f54711a409584904bed2cd0bf3439e00', '测试人26', 'kona26', '96e79218965eb72c92a549dd5a330112', '2011-02-15', '2', '62582984654', 'wbLzLtest@sina.com');
+INSERT INTO `sample_account` VALUES ('fe9356160d744ac39091d5ea03d8146b', '测试人20', 'kona20', '96e79218965eb72c92a549dd5a330112', '2011-07-27', '2', '07784051185', 'AXIo8test@sina.com');
+
+-- ----------------------------
+-- Table structure for `set_frole_fmenu`
+-- ----------------------------
+DROP TABLE IF EXISTS `set_frole_fmenu`;
+CREATE TABLE `set_frole_fmenu` (
+  `FUNC_ROLE_ID` decimal(20,0) NOT NULL default '0',
+  `FUNC_MENU_ID` decimal(20,0) NOT NULL default '0',
+  `LAST_UPDATOR` varchar(32) default NULL,
+  `LAST_UPDATE_TIME` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`FUNC_ROLE_ID`,`FUNC_MENU_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of set_frole_fmenu
+-- ----------------------------
+INSERT INTO `set_frole_fmenu` VALUES ('10003', '10050', null, '2013-12-05 17:30:39');
+INSERT INTO `set_frole_fmenu` VALUES ('10003', '10051', null, '2013-12-05 17:30:39');
+INSERT INTO `set_frole_fmenu` VALUES ('10003', '10052', null, '2013-12-05 17:30:39');
+INSERT INTO `set_frole_fmenu` VALUES ('10003', '10053', null, '2013-12-05 17:30:39');
+INSERT INTO `set_frole_fmenu` VALUES ('10003', '10054', null, '2013-12-05 17:30:39');
+INSERT INTO `set_frole_fmenu` VALUES ('10003', '10055', null, '2013-12-05 17:30:39');
+INSERT INTO `set_frole_fmenu` VALUES ('10003', '10056', null, '2013-12-05 17:30:39');
+INSERT INTO `set_frole_fmenu` VALUES ('10003', '10057', null, '2013-12-05 17:30:39');
+INSERT INTO `set_frole_fmenu` VALUES ('10009', '10029', null, '2013-12-05 17:30:39');
+INSERT INTO `set_frole_fmenu` VALUES ('10009', '10033', null, '2013-12-05 17:30:39');
+INSERT INTO `set_frole_fmenu` VALUES ('10009', '10040', null, '2013-12-05 17:30:39');
+INSERT INTO `set_frole_fmenu` VALUES ('10009', '10041', null, '2013-12-05 17:30:39');
+INSERT INTO `set_frole_fmenu` VALUES ('20009', '20126', null, '2013-12-05 17:30:39');
+INSERT INTO `set_frole_fmenu` VALUES ('20009', '20127', null, '2013-12-05 17:30:39');
+
+-- ----------------------------
+-- Table structure for `set_func_menu`
+-- ----------------------------
+DROP TABLE IF EXISTS `set_func_menu`;
+CREATE TABLE `set_func_menu` (
+  `MENU_ID` decimal(20,0) NOT NULL,
+  `PMENU_ID` decimal(20,0) default NULL,
+  `MENU_CODE` varchar(64) default NULL,
+  `MENU_NAME` varchar(128) NOT NULL,
+  `MENU_NAME_BRIEF` varchar(32) default NULL,
+  `IS_LEAF` char(1) NOT NULL,
+  `LV` decimal(20,0) default NULL,
+  `URL` varchar(384) default NULL,
+  `DISPLAY_ORDER` decimal(20,0) default NULL,
+  `STATUS` char(1) NOT NULL,
+  `LAST_UPDATOR` varchar(32) default NULL,
+  `LAST_UPDATE_TIME` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`MENU_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of set_func_menu
+-- ----------------------------
+INSERT INTO `set_func_menu` VALUES ('10050', '-1', '10050', '后台管理', null, '0', '1', null, '400000', '1', null, '2013-12-05 17:32:26');
+INSERT INTO `set_func_menu` VALUES ('10051', '10050', '10050-10051', '用户维护', null, '1', '2', '/mt/user/user_read.html?opt=s7000', '400100', '1', null, '2013-12-05 17:32:26');
+INSERT INTO `set_func_menu` VALUES ('10052', '10050', '10050-10052', '角色组维护', null, '1', '2', '/mt/rgroup/rgroup_read.html?opt=s5000', '400200', '1', null, '2013-12-05 17:32:26');
+INSERT INTO `set_func_menu` VALUES ('10053', '10050', '10050-10053', '角色维护', null, '0', '2', null, '400300', '1', null, '2013-12-05 17:32:26');
+INSERT INTO `set_func_menu` VALUES ('10054', '10050', '10050-10054', '资源维护', null, '1', '2', '/mt/resource/resource_read.html?opt=s2000', '400400', '1', null, '2013-12-05 17:32:26');
+INSERT INTO `set_func_menu` VALUES ('10055', '10050', '10050-10055', '菜单维护', null, '1', '2', '/mt/menu/menu_read.html?opt=s3000', '400500', '1', null, '2013-12-05 17:32:26');
+INSERT INTO `set_func_menu` VALUES ('10056', '10053', '10050-10053-10056', '功能角色维护', null, '1', '3', '/mt/role/role_menu_read.html?opt=s4000', '400320', '1', null, '2013-12-05 17:32:26');
+INSERT INTO `set_func_menu` VALUES ('10057', '10053', '10050-10053-10057', '资源角色维护', null, '1', '3', '/mt/role/role_resource_read.html?opt=s6000', '400310', '1', null, '2013-12-05 17:32:26');
+INSERT INTO `set_func_menu` VALUES ('20126', '-1', '20126', 'CRUD样例', null, '0', '1', null, '1', '1', null, '2013-12-05 17:32:26');
+INSERT INTO `set_func_menu` VALUES ('20127', '20126', '20126-20127', 'CRUD样例展示', null, '1', '2', '/sample/crud/read.html', '1', '1', null, '2013-12-05 17:32:26');
+
+-- ----------------------------
+-- Table structure for `set_func_role`
+-- ----------------------------
+DROP TABLE IF EXISTS `set_func_role`;
+CREATE TABLE `set_func_role` (
+  `FUNC_ROLE_ID` bigint(20) NOT NULL default '0',
+  `FUNC_ROLE_CODE` varchar(64) default NULL,
+  `FUNC_ROLE_NAME` varchar(128) NOT NULL,
+  `FUNC_ROLE_TYPE` varchar(12) default NULL,
+  `FUNC_ROLE_DESC` varchar(512) default NULL,
+  `STATUS` char(1) NOT NULL,
+  `LAST_UPDATOR` varchar(32) default NULL,
+  `LAST_UPDATE_TIME` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`FUNC_ROLE_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of set_func_role
+-- ----------------------------
+INSERT INTO `set_func_role` VALUES ('10003', null, '功能管理员', null, null, '1', null, '2013-12-05 17:33:07');
+INSERT INTO `set_func_role` VALUES ('20009', null, '样例功能用户', null, null, '1', null, '2013-12-05 17:33:07');
+
+-- ----------------------------
+-- Table structure for `set_resource`
+-- ----------------------------
+DROP TABLE IF EXISTS `set_resource`;
+CREATE TABLE `set_resource` (
+  `RESOURCE_ID` bigint(20) NOT NULL default '0',
+  `SECURITY_FILTER` varchar(15) NOT NULL,
+  `URL_PATTERN` varchar(384) NOT NULL,
+  `STATUS` char(1) NOT NULL,
+  `LAST_UPDATOR` varchar(32) default NULL,
+  `LAST_UPDATE_TIME` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`RESOURCE_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of set_resource
+-- ----------------------------
+INSERT INTO `set_resource` VALUES ('992', 'cAuthc', '/mt/rgroup/rgroup_read.html', '1', null, '2013-12-05 17:33:37');
+INSERT INTO `set_resource` VALUES ('993', 'cAuthc', '/mt/user/user_read.html', '1', null, '2013-12-05 17:33:37');
+INSERT INTO `set_resource` VALUES ('994', 'cAuthc', '/mt/role/role_resource_read.html', '1', null, '2013-12-05 17:33:37');
+INSERT INTO `set_resource` VALUES ('995', 'cAuthc', '/mt/role/role_menu_read.html', '1', null, '2013-12-05 17:33:37');
+INSERT INTO `set_resource` VALUES ('996', 'cAuthc', '/mt/resource/resource_read.html', '1', null, '2013-12-05 17:33:37');
+INSERT INTO `set_resource` VALUES ('997', 'cAuthc', '/mt/menu/menu_read.html', '1', null, '2013-12-05 17:33:37');
+INSERT INTO `set_resource` VALUES ('999', 'cAuthc', '/default.html', '1', null, '2013-12-05 17:33:37');
+INSERT INTO `set_resource` VALUES ('20014', 'cAuthc', '/sample/crud/create.html', '1', null, '2013-12-05 17:33:37');
+INSERT INTO `set_resource` VALUES ('20015', 'cAuthc', '/sample/crud/read.html', '1', null, '2013-12-05 17:33:37');
+INSERT INTO `set_resource` VALUES ('20016', 'cAuthc', '/sample/crud/update.html', '1', null, '2013-12-05 17:33:37');
+INSERT INTO `set_resource` VALUES ('20017', 'cAuthc', '/sample/crud/delete.html', '1', null, '2013-12-05 17:33:37');
+INSERT INTO `set_resource` VALUES ('20018', 'cAuthc', '/sample/crud/csvExport.html', '1', null, '2013-12-05 17:33:37');
+INSERT INTO `set_resource` VALUES ('20019', 'cAuthc', '/export/csvExport.html', '1', null, '2013-12-05 17:33:37');
+
+-- ----------------------------
+-- Table structure for `set_resource_role`
+-- ----------------------------
+DROP TABLE IF EXISTS `set_resource_role`;
+CREATE TABLE `set_resource_role` (
+  `RESOURCE_ROLE_ID` decimal(20,0) NOT NULL default '0',
+  `RESOURCE_ROLE_CODE` varchar(64) default NULL,
+  `RESOURCE_ROLE_NAME` varchar(128) NOT NULL,
+  `RESOURCE_ROLE_TYPE` varchar(12) default NULL,
+  `RESOURCE_ROLE_DESC` varchar(512) default NULL,
+  `STATUS` char(1) NOT NULL,
+  `LAST_UPDATOR` varchar(32) default NULL,
+  `LAST_UPDATE_TIME` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`RESOURCE_ROLE_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of set_resource_role
+-- ----------------------------
+INSERT INTO `set_resource_role` VALUES ('10003', null, '资源管理员', null, null, '1', null, '2013-12-05 17:34:22');
+INSERT INTO `set_resource_role` VALUES ('20019', null, '样例资源用户', null, null, '1', null, '2013-12-05 17:34:22');
+INSERT INTO `set_resource_role` VALUES ('20020', null, 'CSV导出管理用户', null, null, '1', null, '2013-12-05 17:34:22');
+
+-- ----------------------------
+-- Table structure for `set_rgroup_frole`
+-- ----------------------------
+DROP TABLE IF EXISTS `set_rgroup_frole`;
+CREATE TABLE `set_rgroup_frole` (
+  `RGROUP_ID` decimal(20,0) NOT NULL default '0',
+  `FUNC_ROLE_ID` decimal(20,0) NOT NULL default '0',
+  `LAST_UPDATOR` varchar(32) default NULL,
+  `LAST_UPDATE_TIME` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`RGROUP_ID`,`FUNC_ROLE_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of set_rgroup_frole
+-- ----------------------------
+INSERT INTO `set_rgroup_frole` VALUES ('10001', '10002', null, '2013-12-05 17:34:47');
+INSERT INTO `set_rgroup_frole` VALUES ('10002', '10002', null, '2013-12-05 17:34:48');
+INSERT INTO `set_rgroup_frole` VALUES ('10003', '10003', null, '2013-12-05 17:34:48');
+INSERT INTO `set_rgroup_frole` VALUES ('10021', '10008', null, '2013-12-05 17:34:48');
+INSERT INTO `set_rgroup_frole` VALUES ('20022', '20009', null, '2013-12-05 17:34:47');
+
+-- ----------------------------
+-- Table structure for `set_rgroup_rrole`
+-- ----------------------------
+DROP TABLE IF EXISTS `set_rgroup_rrole`;
+CREATE TABLE `set_rgroup_rrole` (
+  `RGROUP_ID` decimal(20,0) NOT NULL default '0',
+  `RESOURCE_ROLE_ID` decimal(20,0) NOT NULL default '0',
+  `LAST_UPDATOR` varchar(32) default NULL,
+  `LAST_UPDATE_TIME` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`RGROUP_ID`,`RESOURCE_ROLE_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of set_rgroup_rrole
+-- ----------------------------
+INSERT INTO `set_rgroup_rrole` VALUES ('999', '999', null, '2013-12-05 17:35:12');
+INSERT INTO `set_rgroup_rrole` VALUES ('10001', '999', null, '2013-12-05 17:35:12');
+INSERT INTO `set_rgroup_rrole` VALUES ('10001', '10002', null, '2013-12-05 17:35:12');
+INSERT INTO `set_rgroup_rrole` VALUES ('10002', '10000', null, '2013-12-05 17:35:12');
+INSERT INTO `set_rgroup_rrole` VALUES ('10002', '10001', null, '2013-12-05 17:35:12');
+INSERT INTO `set_rgroup_rrole` VALUES ('10003', '10003', null, '2013-12-05 17:35:12');
+INSERT INTO `set_rgroup_rrole` VALUES ('10021', '10014', null, '2013-12-05 17:35:12');
+INSERT INTO `set_rgroup_rrole` VALUES ('20022', '20019', null, '2013-12-05 17:35:12');
+INSERT INTO `set_rgroup_rrole` VALUES ('20022', '20020', null, '2013-12-05 17:35:12');
+
+-- ----------------------------
+-- Table structure for `set_role_group`
+-- ----------------------------
+DROP TABLE IF EXISTS `set_role_group`;
+CREATE TABLE `set_role_group` (
+  `RGROUP_ID` decimal(20,0) NOT NULL default '0',
+  `RGROUP_CODE` varchar(64) default NULL,
+  `RGROUP_NAME` varchar(128) NOT NULL,
+  `LAST_UPDATOR` varchar(32) default NULL,
+  `LAST_UPDATE_TIME` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`RGROUP_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of set_role_group
+-- ----------------------------
+INSERT INTO `set_role_group` VALUES ('10003', null, '后台管理员', null, '2013-12-05 17:35:36');
+INSERT INTO `set_role_group` VALUES ('20022', null, '样例用户组', null, '2013-12-05 17:35:36');
+
+-- ----------------------------
+-- Table structure for `set_rrole_resource`
+-- ----------------------------
+DROP TABLE IF EXISTS `set_rrole_resource`;
+CREATE TABLE `set_rrole_resource` (
+  `RESOURCE_ROLE_ID` decimal(20,0) NOT NULL default '0',
+  `RESOURCE_ID` decimal(20,0) NOT NULL default '0',
+  `LAST_UPDATOR` varchar(32) default NULL,
+  `LAST_UPDATE_TIME` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`RESOURCE_ROLE_ID`,`RESOURCE_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of set_rrole_resource
+-- ----------------------------
+INSERT INTO `set_rrole_resource` VALUES ('10003', '992', null, '2013-12-05 17:35:57');
+INSERT INTO `set_rrole_resource` VALUES ('10003', '993', null, '2013-12-05 17:35:57');
+INSERT INTO `set_rrole_resource` VALUES ('10003', '994', null, '2013-12-05 17:35:57');
+INSERT INTO `set_rrole_resource` VALUES ('10003', '995', null, '2013-12-05 17:35:57');
+INSERT INTO `set_rrole_resource` VALUES ('10003', '996', null, '2013-12-05 17:35:57');
+INSERT INTO `set_rrole_resource` VALUES ('10003', '997', null, '2013-12-05 17:35:57');
+INSERT INTO `set_rrole_resource` VALUES ('10003', '999', null, '2013-12-05 17:35:57');
+INSERT INTO `set_rrole_resource` VALUES ('10004', '10008', null, '2013-12-05 17:35:57');
+INSERT INTO `set_rrole_resource` VALUES ('20019', '20014', null, '2013-12-05 17:35:57');
+INSERT INTO `set_rrole_resource` VALUES ('20019', '20015', null, '2013-12-05 17:35:57');
+INSERT INTO `set_rrole_resource` VALUES ('20019', '20016', null, '2013-12-05 17:35:57');
+INSERT INTO `set_rrole_resource` VALUES ('20019', '20017', null, '2013-12-05 17:35:57');
+INSERT INTO `set_rrole_resource` VALUES ('20020', '20018', null, '2013-12-05 17:35:57');
+INSERT INTO `set_rrole_resource` VALUES ('20020', '20019', null, '2013-12-05 17:35:57');
+
+-- ----------------------------
+-- Table structure for `set_user`
+-- ----------------------------
+DROP TABLE IF EXISTS `set_user`;
+CREATE TABLE `set_user` (
+  `USER_ID` decimal(20,0) NOT NULL default '0',
+  `USERNAME` varchar(32) NOT NULL,
+  `PASSWORD` varchar(32) NOT NULL,
+  `DESCRIPTION` varchar(256) default NULL,
+  `STATUS` char(1) NOT NULL,
+  `LAST_UPDATOR` varchar(32) default NULL,
+  `LAST_UPDATE_TIME` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`USER_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of set_user
+-- ----------------------------
+INSERT INTO `set_user` VALUES ('10002', 'admin', '96e79218965eb72c92a549dd5a330112', null, '1', null, '2013-12-05 17:36:23');
+
+-- ----------------------------
+-- Table structure for `set_user_rgroup`
+-- ----------------------------
+DROP TABLE IF EXISTS `set_user_rgroup`;
+CREATE TABLE `set_user_rgroup` (
+  `USER_ID` decimal(20,0) NOT NULL default '0',
+  `RGROUP_ID` decimal(20,0) NOT NULL default '0',
+  `LAST_UPDATOR` varchar(32) default NULL,
+  `LAST_UPDATE_TIME` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`USER_ID`,`RGROUP_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of set_user_rgroup
+-- ----------------------------
+INSERT INTO `set_user_rgroup` VALUES ('10002', '10003', null, '2013-12-05 17:36:40');
+INSERT INTO `set_user_rgroup` VALUES ('10002', '20022', null, '2013-12-05 17:36:40');
+INSERT INTO `set_user_rgroup` VALUES ('10003', '10005', null, '2013-12-05 17:36:41');
+INSERT INTO `set_user_rgroup` VALUES ('10004', '10005', null, '2013-12-05 17:36:41');
+INSERT INTO `set_user_rgroup` VALUES ('10005', '10006', null, '2013-12-05 17:36:41');
+INSERT INTO `set_user_rgroup` VALUES ('10007', '10007', null, '2013-12-05 17:36:40');
+INSERT INTO `set_user_rgroup` VALUES ('10010', '10008', null, '2013-12-05 17:36:40');
+INSERT INTO `set_user_rgroup` VALUES ('10011', '10008', null, '2013-12-05 17:36:41');
