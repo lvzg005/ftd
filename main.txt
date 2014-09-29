@@ -1,7 +1,10 @@
 /*
  * add instruction
  * 
- * branch_show
+ *branch_show
+
+ * remote amend
+
  */
  test branch content
  public  void main(String[] args) {
