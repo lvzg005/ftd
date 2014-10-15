@@ -4,6 +4,7 @@
  *branch_show
 
  * remote amend
+ * delete 1 raw.
 
  */
  test branch content
