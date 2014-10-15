@@ -4,7 +4,7 @@
  *branch_show
  * remote amend
  * add raw.
- * delete 1 raw.
+ * delete 2 raw.
  */
  test branch content
  public  void main(String[] args) {
